@@ -45,7 +45,7 @@
         @else
 
             <div class="container">
-                <div class="col-xs-12 ">
+                <div>
                     @if(!empty($row->text))
                         {{ $row->text }}
                     @endif
@@ -54,6 +54,11 @@
                         {{ $type->text }}
                     @endif
                 </div>
+
+                @if(!empty($galleries) && count($galleries)>1)
+                    @include('home.gallery-block')
+                @endif
+
             </div>
 
         @endif
