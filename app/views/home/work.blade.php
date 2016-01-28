@@ -45,7 +45,7 @@
         @else
 
             <div class="container">
-                <div class="col-xs-12 {{ (isset($posts)&&count($posts)>0)?"col-sm-8 col-lg-offset-1":"col-sm-12"  }} ">
+                <div class="col-xs-12 ">
                     @if(!empty($row->text))
                         {{ $row->text }}
                     @endif
