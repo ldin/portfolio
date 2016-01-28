@@ -1,0 +1,68 @@
+@black:#000000;
+@dark:#333333;
+
+.left{float: left;}
+.right{float: right;}
+
+h1, h2, h3{font-family: 'Russo One', sans-serif;}
+
+#portfolio-page{
+  h1{font-size: 50px;}
+  #works{
+    .caption{
+      padding-top: 100px;
+    }
+    .item {
+      text-align: center;
+      margin-top: 30px;
+      h2{
+        position: relative;
+        font-size: 50px;
+      }
+      a{
+        color: @dark;
+        transition: all .2s;
+        img{
+          max-width: 100%;
+          transform: scale(1);
+          transition: all 1s;
+        }
+
+        h2:after{
+          content: '';
+          position: absolute;
+          width: 30%;
+          height: 100%;
+          border-bottom:2px solid;
+          border-color: transparent;
+          left: 0;
+          overflow: hidden;
+          transition: all .7s;
+          //transform: translateX(1000px);
+        }
+
+        &:hover{
+          &.asafov{color: #ff9900;}
+          &.happer{color: #0b2c4b;}
+          &.formula{color: #018381;}
+          &.electro{color: #b67f46;}
+          &.arin{color: #ff0068;}
+          &.pizza{color: #409b00;}
+          &.sovet{color: #560a16;}
+
+          span{color: @dark}
+          h2:after{
+            //transform: translateX(0);
+            left: 33%;
+            border-color: inherit;
+          }
+
+          img{
+            transform: scale(1.1);
+            transition: all 1s;
+          }
+        }
+      }
+    }
+  }
+}
