@@ -29,7 +29,7 @@
                 @foreach($posts as $k=>$post)
                     <div class="item col-xs-12">
                         <a href="works/{{$post->slug}}" class="{{$post->slug}}">
-                            <div class="caption col-xs-12 col-sm-6 {{($k%2==0)?'right':''}}">
+                            <div class="caption col-xs-12 col-sm-6 {{($k%2==0)?'':'right'}}">
                                 <h2>{{$post->name}}</h2>
                                 <span>структура, программирование, верстка</span>
                             </div>
