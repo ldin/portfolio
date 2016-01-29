@@ -1,6 +1,6 @@
 @extends('home.layout')
 
-@section('title') {{ !empty($settings['title'])?$settings['title']:'Asafov design' }} @stop
+@section('title') {{ !empty($settings['title'])?$settings['title']:'' }} @stop
 
 @section('header')
     <meta property="og:type" content="profile"/>
