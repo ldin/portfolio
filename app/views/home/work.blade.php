@@ -1,7 +1,7 @@
 @extends('home.layout')
 
 @section('title')
-    {{ !empty($row->title)? $row->title:(!empty($type->title)? $type->title:'Asafov design') }}
+    {{ !empty($row->title)? $row->title:(!empty($type->title)? $type->title:'') }}
 @stop
 
 @section('menu-work')
