@@ -7,6 +7,7 @@ composer.lock
 .DS_Store
 Thumbs.db
 *.directory
+test
 
 
 app/config/local/
